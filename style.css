@@ -1,0 +1,242 @@
+/* IMPORTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Jua&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Jua&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Ojuju:wght@200..800&display=swap");
+
+/* CONSTANTS */
+:root {
+    --color-background: #e2e8dd;
+    --color-navbar: #697268;
+    --color-button: #ee6161;
+    --color-button-hover: #ec2424;
+    --font-header: "Jim Nightshade";
+    --font-body: "Jua";
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* body {
+    background-color: var(--color-background);
+    margin: 20px;
+    font-family: var(--font-body);
+}
+
+/* NAVBAR  */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--color-navbar);
+}
+
+div.nav-nav {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-navbar);
+}
+
+div.nav-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span.nav-link {
+    margin: 0 10px;
+}
+
+.ul {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+span.nav-link > a:hover {
+    text-decoration: underline;
+}
+
+span.nav-link-main > a {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: var(--font-header);
+}
+
+/* CONTEXT */
+h1,
+h3,
+p {
+    margin: 0;
+}
+
+.main-header {
+    text-align: center;
+    margin-top: 115px;
+    font-size: 50px;
+}
+
+.background {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.context-head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.context-paragraph {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.gck-images {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.gck-images img {
+    width: 100%;
+}
+
+.part1,
+.part2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-section {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.lofi-images {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.lofi-images img {
+    width: 100%;
+}
+
+.hifi-images {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.tablet {
+    margin-right: 150px;
+}
+
+.tablet img {
+    max-width: 100%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+.phone {
+    margin-left: 150px;
+}
+
+.phone img {
+    max-width: 100%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+/* PART THREE */
+.part3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.old-website,
+.new-website {
+    padding: 40px 40px;
+    margin: 0 10px;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-body);
+}
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--color-button);
+}
+
+.old-website:hover,
+.new-website:hover {
+    background-color: var(--color-button-hover);
+}
+
+.final-images {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
